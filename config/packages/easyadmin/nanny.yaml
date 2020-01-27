@@ -1,0 +1,14 @@
+easy_admin:
+    entities:
+        Nanny:
+            class: App\Entity\Nanny
+            form:
+                fields:
+                    - { property: 'firstname', label: 'prénom'}
+                    - { property: 'lastname', label: 'nom' }
+                    - { property: 'dayPrice', label: 'prix/jour' }
+                    - { property: 'mealPrice', label: 'prix du menu' }
+                    - { property: 'snackPrice', label: 'prix du snack' }
+                    - { property: 'email', label: 'email' }
+                    - { property: 'phoneNumber', label: 'numéro de téléphone' }
+                    #- { property: 'imageFile', type: 'vich_image', label: 'image'}

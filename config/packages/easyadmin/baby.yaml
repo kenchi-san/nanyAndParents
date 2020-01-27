@@ -1,0 +1,10 @@
+easy_admin:
+    entities:
+        Baby:
+            class: App\Entity\Baby
+            form:
+                fields:
+                    - { property: 'firstname', label: 'prénom'}
+                    - { property: 'lastname', label: 'nom'}
+                    - { property: 'birthdate', format: 'j/n/Y', type_options: { widget: 'single_text' }, label: 'date anniversaire'}
+                    - { property: 'informations' ,type: 'fos_ckeditor', label: 'information'}

@@ -1,0 +1,18 @@
+easy_admin:
+    entities:
+        Parents:
+            class: App\Entity\Parents
+            form:
+                fields:
+                    - { property: 'firstname', label: 'prénom'}
+                    - { property: 'lastname',label: 'nom de famille' }
+                    - { property: 'email', type: 'email', label: 'e-mail'}
+                    - { property: 'phoneNumber', label: 'numéro de téléphone'}
+                    - { property: 'imageFile', type: 'file' }
+                    #- { property: 'text',type: 'fos_ckeditor' ,label: 'Text'}
+                   # - { property: 'password', label: "mot de passe"}
+                    #- { property: 'csrf_token', label: "token"}
+
+            show:
+                fields:
+                    - { property: 'image', type: 'image', base_path: '%app.path.product_images%' }
